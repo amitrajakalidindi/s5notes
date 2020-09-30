@@ -1,0 +1,74 @@
+First measure of spread- Range
+Range gives the difference between the max value and the min value in the data.
+If the range is higher it indicates more variability or spread of the sample.
+
+Range is also sensitive to outliers.
+For example assume the farm yeilds as 40, 42, 39, 45, 44, 300. Here the range is (300-39). But here the range increased just because of the outlier value. If the outlier is removed the range changes drastically (45-39).
+
+To overcome the sensitivity of the range to outliers the inter quartile range is calculated. It is the second measure of spread. Inter quartile range is the part between the 75percentile and the 25percentile(Q3-Q1).
+
+Third measure of spread-variance
+In variance we are intrested to know how the data is spread. One solution is to calculate the sum or the average of difference of values from the mean. But the issue is the sum will become zero. So we cannot find the spread by calculating the sum of deviations. To ignore the problem of positive deviations cancelling the negative deviations one of the solutions is to take the absolute values of deviations. The other solution is to take the average of sum of the squares of the deviations. This is the prefered solution and this is called as variance.
+
+Though the mean and median might be same for two samples the variance might be different for two.
+For example:
+Sample 1: 4, 5, 6, 7, 8
+Sample 2: 2, 4, 6, 8, 10
+
+For these two samples mean and median are 6. But the variance will be different.
+
+Fourth measure of spread is the standard deviation and it is equal to square root of variance.
+
+One of the uses of variance is it will let us know about the consistency of the data. More variance indicates less consistency.
+For example:
+Scores of batsman in an odi series:
+Batsman 1 scores: 10 30 50 70 90
+Batsman 2 scores: 42 45 50 55 58 
+
+Here the mean is same but it does not tell us about consistency. If we calculate variance the variance for batsman 2 would be less than the variance for batsman 1. This shows that batsman 2 is more consistent than batsman 1.
+
+Mean and variance can be used to standardize the data.
+
+xi = x_bar + zi*s
+
+zi = (xi - x_bar)/s
+Here
+xi is the data point
+x_bar is the mean 
+s is the standard deviation.
+zi is the standardized value.
+
+Importance of standardizing data:
+For example:
+If we want to calculate the health risk to a person based on attributes such as income, weight and height we might not get correct output as the values with higher value might start dominating. In this example the income might be in lakhs and the weight might be only in 10s. So the income might start dominating the other attributes. To solve this issue the data is standardized. Once the data is standardized the mean of the data will be equal to 0 and the standard deviation will be equal to 1.
+
+
+Box Plots:
+Box plots are used to visualize median in the data, spread in data and outliers in the data.
+Suppose if we have two points Q1(25th percentile) and Q3(75th percentile). A value(x) is said to be an outlier in data if
+x < Q1 - 1.5*(IQR)
+x > Q3 + 1.5*(IQR)
+
+IQR- Inter Quartile Range
+
+For example:
+Data: 1, 5, 6, 7, 11
+The left boundary is Q1 - 1.5*(IQR) = 5 - 1.5*(7 - 5) = 2
+The right boundary is Q3 + 1.5*(IQR) = 7 + 1.5*(7 - 5) = 10
+2,10 are the boundaries
+So in this example 1 and 11 are outliers
+
+Suppose for a given data if there is no outlier. Then the boundary is placed on the maximum value on right side or the minimum value on the left side.
+
+For example:
+Data: 3, 5, 6, 7, 11
+The left boundary is Q1 - 1.5*(IQR) = 5 - 1.5*(7 - 5) = 2
+The right boundary is Q3 + 1.5*(IQR) = 7 + 1.5*(7 - 5) = 10
+As there is no outlier on the left side the boundary is moved to 3.
+So the boundaries are 3 and 10.
+The outlier is 11
+
+Uses of box plots:
+1) To measure the performance of a particular ML model.
+2) To compare the output of different ML systems.
+For example if we want to build a model which predicts if a review is positive or negative, if there is some overlap between the box plots of positive and negative review. We can say that the model is not correct as the review can be either positive or negative. Also if there is a model which classifies many values as outliers which are coinciding with the opposite class IQR we can say that it is not the ideal or accurate model. So using the box plots different models can be compared and the best one can be chosen.

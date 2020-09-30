@@ -1,0 +1,49 @@
+Characteristics of measures of centrality
+
+Mean value is termed as the center of gravity.
+The deviation of a point in dataset is the difference between the point and mean value.
+Note- If all the deviations are calculated and if we sum it up then the sum will be equal to zero. The sum of deviations of the elements on the left side of the element and the sum of the values of the deviations on the right hand side are equal.
+
+Sensitivity of the measures of centrality to Outliers.
+An outlier is defined as any value which is different from other values in the data.
+For example: If we plot a bar graph for number of batsman scoring certain runs in their ODI career. We observer that the bar graph tend to decrease as the number of runs increase. But if at certain point if the number of batsman scoring certian runs is very different from the regular pattern then we can call it as outlier.
+
+Mean is sensitive to outliers.
+Median is not sensitive to outliers.
+
+For example: If we take a batsman scores in a series. If the batsman performed very poorly except one match. The mean will increase a lot because of the match that he performed extraordinarily. In this case the score in the match where the batsman performed very well is an outlier. Because it leads to increment of mean drastically. If we remove that outlier mean will drop drastically. But there will not be much difference in the median. In this case because of the outlier the consistency of batsman might not be judged properly.
+
+To decrease the effect of outliers trimmed mean is calculated.
+In trimmed mean the some k elements are dropped from either side.
+Note- Same number of elements are dropped from either side.
+
+Mode is not sensitive to outliers unless mode itself is an outlier.
+
+
+
+Percentiles:
+p percentile- value such that p percentage of values in data set are less than or equal to this value.
+
+Why do we need percentile?
+Suppose if a student scored 40 out of 100 in a test. By looking at the score we might assume that it is a bad score as it is less than 50% score. But what if the test was really hard and only few people scored more than 40 and most of them scored less than 40. In this case calculating percentile would be very useful.
+
+Calculating position of a score or value which is equal to certain percentile:
+If we take scores of n students in a sorted order. And if we want to calculate the students who scored more than x percentile. Then the list would be the students whoes positions are greater than or equal to (x/100)*(n+1).
+
+Suppose if we have to calculate the value scored by x-perecentiler. Using the above formula assume if we get a value 18.2 . If the values are as follows v1, v2, v3 ..... . Then score would be near to v18 as 18.2 is much closer to 18 than 19. If we want to calculate the exact score then:
+    Score = v18 + 0.2*(v19 - v18)
+
+
+
+Measures of spread:
+Quartiles: Quartiles divide the data into four equal parts. Three quartiles(25th percentile(Q1), 50th percentile(Q2), 75th percentile(Q3)) divide the data into 4 parts.
+
+Quintiles: Quintiles divide the data into five equal parts. Four quintiles(20th percentile(P1), 40th percentile(P2), 60th percentile(P3), 80th percentile(P4)) divide the data into five parts.
+
+Deciles: Deciles divide the data into ten equal parts. Nine deciles(10th percentile(D1), 20th percentile(D2), 30th percentile(D3),....., 90th percentile(D9)) divide the data into ten parts.
+
+The percentile rank of the value is the percentage of data values that are less than or equal to it.
+Calculating percentile rank: PR = ((c + 0.5*(f))/n)*100
+PR percentile rank of score s
+c number of values less than s
+f number of values equal to s

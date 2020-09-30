@@ -1,0 +1,81 @@
+Descriptive Statistics:
+In data there are two broad categories of data.
+1)Qualitative data
+	a)Nominal
+	b)Ordinal
+2)Quantitative data
+	a)Discrete 
+	b)Continuous
+
+Qualitative data is the data which can be divided into classes or labels or categories.
+For example if we take a shirt in ecommerce website, it has many attributes like color, size, etc. As the attributes color or size can be categorised into some classes we can call it as qualitative data.
+
+Nominal attributes are those qualitative attributes in which there is no natural ordering. For example if we take color we cannot say that one color is greater than the other color.
+
+Ordinal attributes are the attributes which has ordering in them. For example if we take ratings for a movie we can say that the rating of one movie is greater than the other movie.
+
+Some more examples of nominal and ordinal attributes.
+Nominal:Gender, Nationality
+Ordinal:Income Range(low, medium, high), Opinion(Agree, neutral, disagree).
+
+Quantitative attributes are the attributeswhich have numerical values and they are used to measure properties.
+Example: Number of days for delivery. It has numerical value.
+
+Numerical values can take any type of values such as whole numbers, integers, rational numbers.
+
+The attributes which have finite discrete values(whole numbers or integers) are called as discrete quantitative attributes.
+Ex: Number of days for delivery.
+
+The attributes which have continuous values(fractional values) are called as continuous quantitative attributes.
+
+Some more examples of discrete and continuous attributes.
+Discrete: days of treatment, number of citizens
+Continuous: GST, GDP, cholestrol level
+
+Oridinal vs Discrete
+In some cases there might be confusion between ordinal and discrete 
+For example in ratings: bad neutral good.
+Although they are expressed on a scale the real distance between two ratings is not defined clearly. So they fall under ordinal in this case.
+
+
+Why should we bother about data types?
+Because while doing statistical analysis it depends on the type of the variables taken.
+For example: In the case of color of the shirts. The questions like what is the average color of the shirt does not make any sense. But instead of it we can take frequnecy of a colored t shirt. So the data types are very important for statistical analysis.
+
+For qualitative attributes we can plot charts like frequency charts, grouped frequency charts, etc and get some intresting findings about the patterns.
+Relative frequency charts are much useful when compared to absolute frequency charts. Because for answering percentage related questions relative frequency charts can be much useful.
+
+For the  discrete quantitative attributes we can calculate the mean, meadian, mode, the spread of the data, frequencies as they are discrete numerical values.
+But for continuous quantitative attributes we can can calculate the mean, meadian, mode , etc. But the questions related to frequencies does not make sense, because the values are in fractions.
+For example: If we consider weights of people in fractions. It is very unlikely for two people in group having the same weight. So questions related to frequencies does not make sense.
+
+Histograms:
+While ploting the graphs for discrete quantitative attributes. For example in cricket, if we plot a graph which shows number of times a batsman scored a particular runs it might get difficult for us to answer questions like how many times a batsman scored single digit score or how many times did he score 90+ runs, because there are too many unique values.
+So a better solution is to group them into class intervals or into bins. For example if we take a bin size of 10. Then the above questions like how many times a batsman scored a single digit can be answered easily.
+A bin size must be chosen idealy. An ideal bin size neither hides nor reveals many details.
+
+
+Need for measures of centrality and spread:
+For an example if we have data of patients from various hospitals. The data might be huge and it might contain too many rows. So it is too difficult to get conclusions with tabular form of data. Drawing plots can help us in good visual summary but in some situations it might not be so helpful as we want to give summary with a few numbers.
+
+We use summary statistics for quantitative data:
+Measures of centrality(mean, median, mode)
+Percentiles(quartiles, quintiles, deciles)
+Measures of spread(range, variance, deviation)
+
+The main role of summary statistics is to provide the summary with a bunch of numbers.
+
+Different measures of centrality
+Suppose if we are calculating the mean runs made by batsman in an ODI.
+If we calculate the mean by taking sample data then we denote it by  (x-bar)
+If we calculate the mean by taking population data then we denote it by (mu)
+Mean is calculated by taking the sum of all elements in data divided by number of elements.
+
+Median is the value which appears at the centre of the data when it is sorted.
+If n is number of elements. If n is odd the central location can be calculated by (n+1)/2.
+If n is even. We have two central locations. The central locations are n/2 and (n+1)/2. So the median is calculated as average of values at two central locations.
+
+Mode is the most frequently appeared number in the data.
+If data has single value as mode it is called single modal distributions.
+If there are two modes then it is called as bimodal distribution.
+If there are multiple modes then it is called as multimodal distribution.

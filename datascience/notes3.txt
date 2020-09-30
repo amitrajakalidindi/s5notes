@@ -1,0 +1,29 @@
+Introduction to statistics
+Knowledge of statistics is required for collecting, processing, describing and modelling data.
+For example for processing the data we need knowledge of statistics for standarsizing and normalising data.
+
+Statistics is the science of collecting, describing and drawing inferences from the data.	
+In statistics we are intrested in studying about a large collection of people.
+For example if we want to conduct an opinion poll there might be different kinds of people like belonging to different age groups, different professions. So studying of large set of people might give accurate results. But studying about a huge set of people is not feasible. So a small set of samples are taken which contains different set of objects and infrences are drawn from it.
+A population is total collection of all objects.
+A sample is the subgroup of population that we are intrested in drawing inferences.
+
+The quantity estimated from a small sample is called as static.
+Ex: mean, median, standard deviation, variance.
+When something is computed for population(whole set) it is called as parameter.
+When it is computed for small sample it is called as statistic.
+Different Sampling Techniques:
+1) Simple random sampling
+2) Stratified Sampling
+3) Cluster Sampling.
+
+For example if an experiment is conducted to test the effect of walnuts on the decrease of colestrol level. We cannot gaurantee accurate results because there are various other factors such as physical exercise on the colestrol level.
+Cofounding or lurking variables are the factors which are not considered while experimenting, but having there effect on the result.
+For example in the above colestrol experiment the physical exercise and effect of smoking can be considered as confounding or lurking variables.
+
+Randomised control experiments:
+The effect of these lurking variables can be reduced by randomised control experiments.
+For example in randomised experiments two groups are taken, one is treament group and other is control group. Both the groups will have same kind of samples. For instance in the colestrol experiment one group is given walnuts and other group is not given walnuts. So after observing the results of both the groups we can properly measure the affect of walnuts on colestrol as the only difference between two groups is walnuts.
+
+In an experiment if the mean is calculated on only single sample as having more samples is more expensive then it is called point estimate.
+But sometimes if calculating mean for single sample is not reliable as there is a chance for true mean to be very far away from it an interval estimate is calculated.

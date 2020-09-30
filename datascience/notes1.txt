@@ -1,0 +1,49 @@
+Data Science  involves obtaining useful information from the collected data.
+
+Tasks in Data Science pipeline:
+1)Collecting data.
+2)Storing data.
+3)Processing data.
+4)Describing data.
+5)Modeling data.
+
+Collecting Data:
+Collection of data depends on two factors
+1) Kind of the problem.
+2) Environment in which data scientist is working.
+(Sometimes data might be available inhouse(structured format) and sometimes data needs to be collected from outside(unstructed format).)
+
+
+
+Storing Data:
+Data is stored in a structured format(tabular format) in relational databases.
+Data can be stored in multiple databases based on the requirements.
+Data warehouse is a collection of multiple structured databases which can be used for purposes like analytics.
+
+Unstructed data(Ex: images,audio,video)
+3V's high Volume, high Variety, high Velocity categorize big data.
+Big data brings many problems because of different varities and its unstructured format.
+
+Data lakes is the collection of all kinds of data like structured data, unstructured data and semi-structured data.
+
+
+
+Processing Data:
+1)Data wrangling or Data munging: It is the process of transforming and loading data from one format to another format.
+2)Data Cleaning
+    a)Fill missing values.
+    b)Standardize keywords and tags.
+    c)Correct spelling errors.
+    d)Identify and remove outliers.(wrong values which differ from a pattern or range.)
+3)Data Scaling(changing units), Normalizing(transformation of data) and Standardizing.
+
+Formula for standardization: x' = (x - min)/(max - min)
+
+Describing Data:
+1) Vizualizing of data(Ex: Bar graphs, pie charts, etc).
+2) Summarizing of data.
+Finding useful insights or results using mean,median,mode,variance,standard deviation etc.
+
+Modelling Data:
+It involves producing data model to find out about the distribution
+

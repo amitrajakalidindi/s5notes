@@ -1,0 +1,48 @@
+Modeling Data:
+There are two types of modelling the Data
+1) Statestical modelling.
+2) Algorithmic modelling.
+
+Statestical modelling:
+We should find the underlying data distribution.
+Suppose if all the values are spread around mean and variance we can say that data follows normal distribution model.
+We should have a linear relationship between the variables. Finding mean is not really enough in many cases.
+
+Algorithmic Modelling:
+There are multiple factors which determine the outcome of a particular requirment.
+In algorithmic modelling the main idea is to come up with a function that defines the relationship between the input and output.
+The job of ML is to obtain the relationship. 
+More importance is given to the final output.
+
+
+                    Statistical Modelling vs Algorithmic Modelling
+Simple, intuitive models                      Complex,flexible models
+More suited for low-dimensional data          Can work with high-dimensinal data
+Robus statistical analysis is possible        Not suitable for robust statistical analysis
+Focus on intrepretability                     Focus on prediction
+Data lean models                              Data hungry models
+More of statistics                            More of ml,dl
+
+
+The job of ml or deep learning is to find functions or models to approximate the relationships(true value and predicted value must be same.)
+
+y^ = f(x)^(our approximation)
+
+y^ is the predicted value and y is the true value
+
+A lot of data is available today. And as the bulk storage devices and GPU's are available at a cheap rate data science became very popular.
+
+
+
+Breaking Myths of data science:
+In data science machine does not do everything on itself.
+For example in collection of data everything is done by human being.
+In storing the data the schema and the file system is completely decided by human being.
+In processing data the techniques for cleaning and processing are decided by humans and the rest part is done by machine.
+In describing data humans decide which information is worth describing and also decides how it should be described.
+
+Data science need not require Big data or deep learning compulsorily.
+For example data science is also useful for small businesses which have a very less amount of data. 
+
+Data need not be useful in all cases.
+Some time we cannot use it when there are no meaningful insights, no actionable insights, noisy data(errors like spelling mistakes), lack of clean data, etc.
